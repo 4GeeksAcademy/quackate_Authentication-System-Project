@@ -1,4 +1,4 @@
-.login-form {
+.signup-form {
     width: 40%;
     margin: auto;
     margin-bottom: 80px;
@@ -14,10 +14,6 @@
     border-radius: 20px;
 }
 
-.login-btn {
-    border-radius: 20px;
-}
-
-.dino-img {
+.signup-btn {
     border-radius: 20px;
 }
