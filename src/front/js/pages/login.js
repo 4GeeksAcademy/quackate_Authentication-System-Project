@@ -20,24 +20,22 @@ export const Login = () => {
 	return (
 		<div className="login-form text-center mt-5">
 			<h1 className="mb-5">Login here!</h1>
-			{(store.token && store.token != "" && store.token != undefined) ? "You are logged in with this token:" + store.token :
-				<div>
-					<div className="mb-3">
-						<label htmlFor="email" className="form-label">Email address</label>
-						<input type="email" className="form-control" id="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-					</div>
-					<div className="mb-3">
-						<label htmlFor="password" className="form-label">Password</label>
-						<input type="password" className="form-control" id="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-					</div>
-					<button className="btn btn-primary login-btn mt-4 px-3" onClick={handleClick}>Login</button>
-					<p className="mt-5">Not registered yet?&nbsp;
-						<Link to='/signup'>
-							<span>Sign up now!</span>
-						</Link>
-					</p>
+			<div>
+				<div className="mb-3">
+					<label htmlFor="email" className="form-label">Email address</label>
+					<input type="email" className="form-control" id="email" value={email} onChange={(e) => setEmail(e.target.value)} />
 				</div>
-			}
+				<div className="mb-3">
+					<label htmlFor="password" className="form-label">Password</label>
+					<input type="password" className="form-control" id="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+				</div>
+				<button className="btn btn-primary login-btn mt-4 px-3" onClick={handleClick}>Login</button>
+				<p className="mt-5">Not registered yet?&nbsp;
+					<Link to='/signup'>
+						<span>Sign up now!</span>
+					</Link>
+				</p>
+			</div>
 		</div>
 	);
 };
